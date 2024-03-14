@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 300px;
+        }
+        .button-content button{
+            padding: 20px;
+           margin-left: 20px;
+           margin-top: 10px;
+           border-radius: 10px;
+           background-image: linear-gradient(50deg,rgb(6, 6, 6), rgb(249, 249, 242));
+           font-size: large;
+           font-weight: bold;
+        }
+        #timer{
+            font-size: xx-large;
+            font-weight: bolder;
+          color: honeydew;
+            
+        }
+body{
+    background-image: url(./stopclock.jpg);
+   background-position: center;
+   background-size: cover;
+}
+    </style>
+</head>
+<body>
+    <!-- <img src="./stopclock.jpg" alt=""> -->
+    <div id="timer">00:00:00</div>
+    <div class="button-content">
+        <button id="start">start</button>
+        <button id="reset">reset</button>
+        <button id="stop">stop</button>
+    </div>
+    <script src="./java.js"></script>
+</body>
+</html>
